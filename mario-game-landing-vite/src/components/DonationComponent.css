@@ -1,0 +1,49 @@
+.neon-input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .neon-currency {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 0 0 5px #89CFF0, 0 0 10px #89CFF0, 0 0 15px #89CFF0, 0 0 20px #89CFF0;
+  }
+  
+  .neon-input {
+    background-color: transparent;
+    border: 2px solid #89CFF0;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+    padding: 10px 10px 10px 30px;
+    width: 225px;
+    text-align: left;
+    outline: none;
+  }
+  
+  .neon-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .neon-input:focus {
+    box-shadow: 0 0 5px #89CFF0, 0 0 10px #89CFF0, 0 0 15px #89CFF0, 0 0 20px #89CFF0;
+  }
+  
+  .neon-input, .neon-currency {
+    animation: flicker 7s infinite;
+  }
+  
+  @keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+      opacity: 0.99;
+      text-shadow: 0 0 5px #89CFF0, 0 0 10px #89CFF0, 0 0 15px #89CFF0, 0 0 20px #89CFF0;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+      opacity: 0.4;
+      text-shadow: none;
+    }
+  }
