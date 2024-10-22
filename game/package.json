@@ -13,6 +13,7 @@
     "babel-loader": "^8.1.0",
     "browser-sync": "2.29.3",
     "browser-sync-webpack-plugin": "^2.3.0",
+    "compression-webpack-plugin": "^11.1.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.0.3",
     "image-webpack-loader": "^8.1.0",
