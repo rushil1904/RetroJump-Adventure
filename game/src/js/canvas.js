@@ -26,7 +26,7 @@ let gameState = "playing";
 
 const SCORE_API_URL =
   process.env.NODE_ENV === "production"
-    ? "https://your-score-server.onrender.com/api"
+    ? "https://retrojump-adventure-server.onrender.com/api"
     : "http://localhost:5001/api";
 
 function debouncedSaveScore(playerName, score, forceUpdate = false) {
