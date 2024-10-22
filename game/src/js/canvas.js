@@ -24,6 +24,11 @@ let debounceTimer;
 let lastSavedScore = 0;
 let gameState = "playing";
 
+const SCORE_API_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://your-score-server.onrender.com/api"
+    : "http://localhost:5001/api";
+
 function debouncedSaveScore(playerName, score, forceUpdate = false) {
   clearTimeout(debounceTimer);
   debounceTimer = setTimeout(() => {
@@ -36,7 +41,7 @@ function debouncedSaveScore(playerName, score, forceUpdate = false) {
 
 async function getHighScores() {
   try {
-    const response = await fetch("http://localhost:5001/api/scores", {
+    const response = await fetch(`${SCORE_API_URL}/scores`, {
       method: "GET",
       credentials: "include",
       headers: {
@@ -56,7 +61,7 @@ async function getHighScores() {
 
 async function saveScore(playerName, score) {
   try {
-    const response = await fetch("http://localhost:5001/api/scores", {
+    const response = await fetch(`${SCORE_API_URL}/scores`, {
       method: "POST",
       credentials: "include",
       headers: {
