@@ -19,7 +19,7 @@
     "compression-webpack-plugin": "^11.1.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.0.3",
-    "image-webpack-loader": "^8.1.0",
+    "image-webpack-loader": "^4.2.0",
     "prettier": "^2.0.2",
     "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.95.0",
