@@ -7,7 +7,7 @@ import { ComputersCanvas } from './canvas'
 const Hero = () => {
   const handlePlayGame = () => {
     console.log("Play Game clicked!");
-    window.open("http://localhost:3003/", "noopener,noreferrer");
+    window.open("https://bhati-mario.onrender.com", "noopener,noreferrer");
   };
 
   return (
