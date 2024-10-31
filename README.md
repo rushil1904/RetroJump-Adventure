@@ -1,4 +1,4 @@
-# Custom Mario
+# RetroJump Adventure
 
 This is a custom mario game. The elements are customised to celebrate my friend's birthday. You can use this to create your own custom game or maybe contribute to this project to make it better. 
 
