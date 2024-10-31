@@ -4,9 +4,9 @@ This is a custom mario game. The elements are customised to celebrate my friend'
 
 *The game works best on Chrome/ Chromium-based browsers.* 
 
-Links: https://bhati-home.onrender.com (Homepage)
+Links: [Homepage](https://retrojump-adventure-1.onrender.com)
 
-https://bhati-mario.onrender.com/ (Game)
+[Game](https://bhati-mario.onrender.com/) 
 
 
 ![Game View](https://github.com/rushil1904/Custom-Mario/blob/main/game/src/media/Site%20Collage.png?raw=true)
